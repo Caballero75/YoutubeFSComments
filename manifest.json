@@ -4,8 +4,17 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"]
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
+  ],
+  "permissions": [
+    "https://www.youtube.com/*",
+    "tabs",
+    "webNavigation"
   ]
 }
