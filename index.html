@@ -11,85 +11,72 @@
             background-color: bisque;
         }
 
-        button {
-            background-color: rgba(0, 0, 0, 0.1);
+        .flex-row-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
         }
 
-        .d1,
-        .d2,
-        .d3 {
-            background-color: rgba(100, 100, 100, 0.2);
-            position: relative;
+        .flex-column-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+        }
+
+        .d {
+            background-color: rgb(93, 125, 255);
             padding: 12px;
             margin: 12px;
         }
 
-        #container {
-            visibility: visible;
-            height: 300px;
-            overflow-x: auto;
+        .d1 {
+            color: aliceblue;
+            flex: 1;
         }
 
-        ::-webkit-scrollbar {
-            height: 12px;
-            width: 12px;
-            background: rgba(255, 255, 255, 0.1);
+        .d2 {
+            color: rgb(113, 175, 229);
+            flex: 1;
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0.1);
-            -webkit-border-radius: 24px;
-        }
-
-        ::-webkit-scrollbar-corner {
-            background: #000;
+        .d3 {
+            color: rgb(211, 255, 34);
+            flex: 1;
         }
     </style>
     <script>
-        function show() {
-            var c = document.getElementById("container")
-            c.style.color = "black"
-        } function hide() {
-            var c = document.getElementById("container")
-            c.style.color = "white"
-        }
-        function createBtn(label, callback) {
-            var b1 = document.createElement('button');
-            // b.setAttribute("id", "parag")
-            b1.setAttribute("type", "button")
-            b1.textContent = label;
-            b1.onclick = callback;
-            document.getElementsByTagName("body")[0].prepend(b1)
-        }
     </script>
 </head>
-
-<body onload="createBtn('show', show);createBtn('HIDE', hide);">
-
-    <div id="container" class="c" style="color: aliceblue;">
-        <div class="d d1">
-            <h1>D 1</h1>
-            Nisi labore cillum anim in commodo ullamco. Dolore officia qui excepteur proident velit. Esse pariatur
-            ullamco
-            velit minim veniam reprehenderit enim do dolore ut laborum do quis id. Sint eu magna Lorem voluptate
-            proident et
+<body">
+    <p
+        style="color: rgb(255, 255, 255); visibility: VISIBLE; width: fit-content; padding: 6px; margin: 12px; background-color: rgba(0, 0, 0, 0.6); border-radius: 20px 15px 15px 5px;">
+    <div style="display:flex; flex-direction: column;">
+        <div style="display:flex; flex-direction: row; align-items: center" ;="">
+            <div style="padding: 0px 8px 8px 0px">
+                <img src="https://yt3.ggpht.com/ytc/AKedOLRg28jXG8gHL4IwEg8mjTaAbj1s0dlVBmGowsnVQVUWXUPO4SkIxujnbzlr94ga=s48-c-k-c0x00ffffff-no-rj"
+                    width="40px" height="40px" style="vertical-align: middle;border-radius: 50% 40% 10% 40% ;">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div style="color:rgba(255,255,255,0.8)">
+                    <h3>20 de setembro de 2021</h3>
+                </div>
+                <div style="color:rgba(255,255,255,0.95)">
+                    <h3>Abde Zen</h3>
+                </div>
+            </div>
         </div>
-        <div class="d d2">
-            <h1>D 1</h1>
-            Nisi labore cillum anim in commodo ullamco. Dolore officia qui excepteur proident velit. Esse pariatur
-            ullamco
-            velit
-            minim veniam reprehenderit enim do dolore ut laborum do quis id. Sint eu magna Lorem voluptate proident et
-            labore
+        <div style="color:rgba(255,255,255,0.9); margin-left: 12px">
+            Miam Miam, Mille Merci pour le Partage...Que du Bonheur !!!
         </div>
-        <!-- <div class="d3">
-            <h1>D 1</h1>
-            Nisi labore cillum anim in commodo ullamco. Dolore officia qui excepteur proident velit. Esse pariatur
-            ullamco
-            velit
-        </div> -->
     </div>
-
-</body>
+    </p>
+    </body>
 
 </html>
