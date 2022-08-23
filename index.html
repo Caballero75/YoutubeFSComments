@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body {
-            background-color: bisque;
+            background-color: blueviolet;
         }
 
         .flex-row-container {
@@ -25,50 +25,41 @@
             justify-content: flex-start;
         }
 
-        .avatar {
-            width: 50px;
-            height: 50px;
-        }
-
-        .d {
-            background-color: rgb(93, 125, 255);
-            padding: 12px;
+        #commentBox {
+            color: rgb(255, 255, 255);
+            width: fit-content;
+            padding: 6px;
             margin: 12px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px 15px 15px 5px;
         }
 
-        .d1 {
-            color: aliceblue;
-            flex: 1;
-        }
-
-        .d2 {
-            color: rgb(113, 175, 229);
-            flex: 1;
-        }
-
-        .d3 {
-            color: rgb(211, 255, 34);
-            flex: 1;
+        #avatar {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            border-radius: 48% 40% 10% 40%;
         }
     </style>
     <script>
     </script>
 </head>
-<body">
-    <p
-        style="color: rgb(255, 255, 255); visibility: VISIBLE; width: fit-content; padding: 6px; margin: 12px; background-color: rgba(0, 0, 0, 0.6); border-radius: 20px 15px 15px 5px;">
-    <div style="display:flex; flex-direction: column;">
-        <div style="display:flex; flex-direction: row; align-items: center" ;="">
+
+<body>
+
+    <div id="commentBox" style="display:flex; flex-direction: column;">
+        <div style="display:flex; flex-direction: row; align-items: start">
             <div style="padding: 0px 8px 8px 0px">
-                <img src="https://yt3.ggpht.com/ytc/AKedOLRg28jXG8gHL4IwEg8mjTaAbj1s0dlVBmGowsnVQVUWXUPO4SkIxujnbzlr94ga=s48-c-k-c0x00ffffff-no-rj"
-                    width="40px" height="40px" style="vertical-align: middle;border-radius: 50% 40% 10% 40% ;">
+                <img id="avatar"
+                    src="https://yt3.ggpht.com/ytc/AKedOLRg28jXG8gHL4IwEg8mjTaAbj1s0dlVBmGowsnVQVUWXUPO4SkIxujnbzlr94ga=s48-c-k-c0x00ffffff-no-rj"
+                    width="40px" height="40px">
             </div>
             <div style="display: flex; flex-direction: column;">
                 <div style="color:rgba(255,255,255,0.8)">
-                    <h3>20 de setembro de 2021</h3>
+                    20 de setembro de 2021
                 </div>
                 <div style="color:rgba(255,255,255,0.95)">
-                    <h3>Abde Zen</h3>
+                    Abde Zen
                 </div>
             </div>
         </div>
@@ -76,7 +67,7 @@
             Miam Miam, Mille Merci pour le Partage...Que du Bonheur !!!
         </div>
     </div>
-    </p>
-    </body>
+
+</body>
 
 </html>

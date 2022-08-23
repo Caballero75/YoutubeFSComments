@@ -1,7 +1,7 @@
 {
-  "name": "Youtube API",
+  "name": "Youtube Full Screen Comments",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "content_scripts": [
     {
       "matches": [
@@ -13,7 +13,6 @@
     }
   ],
   "permissions": [
-    "https://www.youtube.com/*",
     "tabs",
     "webNavigation"
   ]
